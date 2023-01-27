@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+/* Variables */
+
+
+:root {
+/*	font-size: calc(0.5em + 1vw);*/
+	--main-bg: hsl(220, 10%, 10%);
+	--block-bg: hsl(220, 10%, 15%);
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* Essentials */
+
+
+:root {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--main-bg);
+	/* background: linear-gradient(#e66465, #9198e5); */
+	background: linear-gradient(hsl(220, 10%, 40%), hsl(220, 10%, 10%));
+}
+
+body * + * {
+	margin-top: 1em;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto 128px;
+}
+
+
+/* Main */
+
+header {
+	padding: 1em 4em;
+}
+
+h1 {
+	color: hsl(220, 10%, 85%);
+	font-family: 'Exo 2', sans-serif;
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+h2 { padding-top: 2em; }
+
+.block {
+	border-radius: 0.75em;
+	margin: 0 4em 2em;
+	padding: 1em 1.5em;
+	background-color: var(--block-bg);
+}
+
+		.block > h3 {
+			margin-top: 0;
+		}
+
+		.block > li {
+			margin-top: 0;
+		}
+
+p {
+	color: hsl(220, 10%, 95%);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.3em;
+	letter-spacing: 0.03em;
+	margin: 0 0 1.5em 0;
+}
+
+.tag {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.75em;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	color: hsl(220, 10%, 70%);
+	background-color: hsl(220, 10%, 15%);
+	border-width: 0.2em;
+	border-style: solid;
+	border-color: hsl(220, 10%, 20%);
+	border-radius: 1em;
+	padding: 0.5em 1em;
+	max-width: 10em;
+}
+
+.tag-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	align-content: flex-end;
+	gap: 1em;
+}
+
+.friendly {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+.icon {
+	font-size: 1.25em;
+	color: hsl(220, 10%, 100%);
+	margin-bottom: 0.25em;
+}
