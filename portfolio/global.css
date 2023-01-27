@@ -1,0 +1,181 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+
+/* Variables */
+
+:root {
+    --color-lightness:           hsla(220, 0%, 100%, 1);
+    --color-secondary-box:       hsla(220, 20%, 97%, 1);
+    --color-secondary-background:hsla(220, 20%, 92%, 1) /* hsla(210, 31%, 90%, 1) #DDE5ED */;
+    --color-secondary-lightest:  hsla(220, 20%, 80%, 1) /* hsla(210, 31%, 90%, 1) #DDE5ED */;
+    --color-secondary-lighter:   hsla(220, 20%, 75%, 1) /* hsla(212, 32%, 76%, 1) #AEC0D5 */;
+    --color-secondary:           hsla(220, 20%, 65%, 1) /* hsla(212, 22%, 64%, 1) #8FA2B7 */;
+    --color-secondary-text:      hsla(220, 20%, 45%, 1) /* hsla(212, 16%, 46%, 1) #637589 */;
+    --color-secondary-darkest:   hsla(220, 20%, 35%, 1) /* hsla(213, 15%, 35%, 1) #4B5766 */;
+    --color-secondary-darkness:  hsla(220, 20%, 15%, 1);
+    
+    --font-custom:              "IBM Plex Sans";
+    --font-system:              system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    --thin:                     100;
+    --extralight:               200;
+    --light:                    300;
+    --regular:                  400;
+    --medium:                   500;
+    --semibold:                 600;
+    --bold:                     700;
+}
+
+
+
+
+/* Media queries */
+:root {
+    font-size: 1rem;
+}
+
+@media (min-width: 800pt) {
+    :root {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200pt) {
+    :root {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+:root {
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--color-secondary-background);
+    font-family: var(--font-custom), var(--font-system);
+    line-height: 1.3;
+}
+
+body * + * {
+	margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+
+
+/* Text sizes */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: var(--regular);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: var(--medium);
+    letter-spacing: -0.5pt;
+}
+
+h3 {   
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    letter-spacing: -0.25pt;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: var(--medium);
+    letter-spacing: -0.125pt;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: var(--medium);
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: var(--regular);
+}
+
+
+
+
+/* Text styles: Links */
+a {
+    color: var(--color-secondary-text);
+    text-decoration-line: none;
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+    color: var(--color-secondary);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-secondary);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1pt;
+}
+
+a:active {
+}
+
+
+
+
+.opacity10 {
+    opacity: 10%;
+}
+
+.opacity30 {
+    opacity: 30%;
+}
+
+.opacity50 {
+    opacity: 50%;
+}
+
+.opacity70 {
+    opacity: 70%;
+}
+
+.opacity90 {
+    opacity: 90%;
+}
