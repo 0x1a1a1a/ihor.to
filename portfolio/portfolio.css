@@ -13,7 +13,7 @@ header {
     background-position: top;
     background-size:     cover;
     background-repeat:   no-repeat;
-    padding:             1.5em 3em;
+    padding:             1.5em 15vw;
 }
 
         header h1 {
@@ -29,6 +29,7 @@ header {
 
         .tag {
         	font-size:        0.75rem;
+            letter-spacing:   0.5pt;
         	font-weight:      var(--medium);
         	color:            var(--color-lightness);
         	border-width:     1pt;
@@ -40,13 +41,12 @@ header {
 
         header h4 {
             color: var(--color-lightness);
-            opacity: 90%;
+            font-weight: var(--regular);
             margin-bottom: 1.5em;
         }
 
         header p {
             color: var(--color-lightness);
-            opacity: 70%;
         }
 
         header p + p {
@@ -66,13 +66,13 @@ main { }
         .container-main {
             margin:     0 auto;
             padding:    0 1.5em;
-            max-width:  800pt;
+            max-width:  640pt;
         }
 
 
 
         .featured {
-
+            margin-top: 3em;
         }
 
                 .container-featured {
@@ -100,8 +100,8 @@ main { }
                 }
 
                 .featured h2 {
-                    color:   var(--color-secondary);
-                    margin:  2em 0 1em;
+                    color:          var(--color-secondary);
+                    margin-bottom:  0.5em;
                 }
 
                 .featured h4 {
@@ -123,8 +123,9 @@ main { }
         .button {
             display:          inline-block;
             width:            100%;
-            margin:           3em 0;
-            padding:          0.5em 0.75em;
+            margin:           2em 0;
+            padding:          1em 0.75em;
+            box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
 
             background-color: var(--color-secondary-box);
             border-radius:    1em;
@@ -137,12 +138,11 @@ main { }
 
 
         .project {
-            padding-top: 4em;
+            margin-top: 3em;
         }
 
                 .project h2 {
                     color: var(--color-secondary-text);
-                    margin-bottom: 1em;
                 }
 
                 .project h3 {
@@ -152,11 +152,9 @@ main { }
 
                 .project h4 {
                     color:   var(--color-secondary-text);
-                    margin-bottom: .5em;
                 }
 
                 .project h5 {
-                    font-weight:    var(--medium);
                     color:          var(--color-secondary);
                     margin-bottom:  0.5em;
                 }
@@ -164,11 +162,11 @@ main { }
                 .project img {
                     display: block;
                     max-width: 100%;
-                    /* margin: 0 auto; */
+                    margin: 1em auto;
                 }
 
                 .project ul {
-                    padding: 0 0 0.5em 2em;
+                    padding-left:  2em;
                     list-style-type: disc;
                     /* list-style-image: url('sqpurple.gif'); */
                 }
@@ -177,47 +175,77 @@ main { }
                     margin-top: 0.25em;
                 }
 
-                .project .info {
+                .project .caption {
+                    display: block;
+                    margin-top: 0.5em;
+                    font-size: 0.825em;
+                    color: var(--color-secondary);
+                }
+
+                .container-project {
                     display:           flex;
                     flex-wrap:         wrap;
                     align-items:       stretch;
-                    gap:               0.5em;
+                    gap:               1em;
+                    margin-top:        1.5em;
                 }
 
-                        .project .info .highlight {
+                        .project .callout {
 
                             flex-grow:         1;
-                            flex-shrink:       0;
+                            flex-shrink:       1;
                             flex-basis:        45%;
+                            max-width:         25em;
 
-                            border-radius:     1em;
                             padding:           1em 1.25em;
-                            background-color:  var(--color-secondary-background);
 
                             color:             var(--color-secondary-text);
 
-                            border-style:     solid;
-                            border-width:     1.25pt;
-                            border-color:     var(--color-secondary-lightest);
-                            border-radius:    1em;
+                            border-style:      solid;
+                            border-width:      1.5pt;
+                            border-radius:     0.5em;
+                        }
+
+                        .callout-green {
+                            background-color:  var(--color-tertiary-green-bg);
+                            border-color:      var(--color-tertiary-green-stroke);        
+                        }
+
+                        .callout-yellow {
+                            background-color:  var(--color-tertiary-yellow-bg);
+                            border-color:      var(--color-tertiary-yellow-stroke);
+                        }
+
+                        .callout-blue {
+                            background-color:  var(--color-tertiary-blue-bg);
+                            border-color:      var(--color-tertiary-blue-stroke);   
+                        }
+
+                        .callout-inline {
+                            margin-top: 1em;
                         }
 
                         .project .process {
 
-                            flex-grow:         1;
-                            flex-shrink:       0;
-                            flex-basis:        100%;
+                            flex-grow:        1;
+                            flex-shrink:      0;
+                            flex-basis:       100%;
 
-                            border-radius:     1em;
-                            padding:           1em 0;
-                            background-color:  var(--color-secondary-background);
+                            margin-top:       1em;
+                            border-radius:    1em;
+                            padding:          1em 0;
+                            background-color: var(--color-secondary-background);
 
-                            color:             var(--color-secondary-text);
+                            color:            var(--color-secondary-text);
 
                             border-style:     none;
                             border-width:     1.25pt;
                             border-color:     var(--color-secondary-lightest);
                             border-radius:    1em;
+                        }
+
+                        .project .step {
+                            margin-top: 1.5em;
                         }
 
                         .project .step + .step {
@@ -233,6 +261,7 @@ main { }
 
 
 footer {
+        margin-top:        3em;
         background-color:  var(--color-secondary-text);
         padding:           1em;
 }
@@ -251,7 +280,7 @@ footer {
                     gap:              0.5em;
                     padding:          0.5em 0.75em;
                     color:            var(--color-secondary-background);
-                    font-weight:      var(--medium);
+                    font-weight:      var(--regular);
                     font-size:        1rem;
                     text-decoration:  none;
                     border-style:     solid;

@@ -1,4 +1,10 @@
+
+
+
 /* Font */
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
@@ -17,6 +23,16 @@
     --color-secondary-text:      hsla(220, 20%, 45%, 1) /* hsla(212, 16%, 46%, 1) #637589 */;
     --color-secondary-darkest:   hsla(220, 20%, 35%, 1) /* hsla(213, 15%, 35%, 1) #4B5766 */;
     --color-secondary-darkness:  hsla(220, 20%, 15%, 1);
+
+    --color-tertiary-yellow-bg:     hsla(45, 80%, 97%, 1);
+    --color-tertiary-yellow-stroke: hsla(45, 70%, 70%, 1);
+    --color-tertiary-blue-bg:       hsla(200, 80%, 97%, 1);
+    --color-tertiary-blue-stroke:   hsla(200, 70%, 70%, 1);
+    --color-tertiary-green-bg:      hsla(90, 70%, 97%, 1);
+    --color-tertiary-green-stroke:  hsla(100, 70%, 70%, 1);
+
+
+    
     
     --font-custom:              "IBM Plex Sans";
     --font-system:              system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -34,6 +50,10 @@
 
 
 /* Media queries */
+
+
+
+
 :root {
     font-size: 1rem;
 }
@@ -53,12 +73,18 @@
 
 
 
+/* Hacks */
+
+
+
+
 :root {
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
 }
 
 *,
@@ -94,17 +120,22 @@ body * + * {
 
 
 
+
 /* Text sizes */
+
+
+
 
 h1 {
     font-size: 2.5rem;
-    font-weight: var(--regular);
+    font-weight: var(--light);
+    letter-spacing: -0.75pt;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: var(--medium);
-    letter-spacing: -0.5pt;
+    font-weight: var(--regular);
+    letter-spacing: -0.25pt;
 }
 
 h3 {   
@@ -120,7 +151,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: var(--medium);
     text-transform: uppercase;
     letter-spacing: 0.5pt;
@@ -131,10 +162,18 @@ p {
     font-weight: var(--regular);
 }
 
+ul {
+    font-weight: var(--regular);
+}
+
 
 
 
 /* Text styles: Links */
+
+
+
+
 a {
     color: var(--color-secondary-text);
     text-decoration-line: none;
@@ -147,15 +186,36 @@ a:visited {
 }
 
 a:hover {
-    color: var(--color-secondary);
+    color: var(--color-secondary-text);
     text-decoration-line: underline;
-    text-decoration-color: var(--color-secondary);
+    text-decoration-color: var(--color-secondary-text);
     text-decoration-style: solid;
-    text-decoration-thickness: 1pt;
+    text-decoration-thickness: 2pt;
 }
 
 a:active {
 }
+
+p > a, li > a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-secondary-lightest);
+    text-decoration-style: solid;
+    text-decoration-thickness: 2pt;
+
+}
+
+p > a:hover, li > a:hover {
+    color: var(--color-secondary-text);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-secondary-text);
+    text-decoration-style: solid;
+    text-decoration-thickness: 2pt;
+}
+
+
+
+
+/* Helpers: Opacity */
 
 
 

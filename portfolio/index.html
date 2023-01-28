@@ -15,10 +15,10 @@
 
 			<header id="header">
                 <h1>Portfolio<span class="tag">2023</span></h1>
-                <h4>Ihor Kosyriev</h4>
-                <p>👨‍💻 Software Product Designer</p>
-                <p>🇺🇦 Kyiv, Ukraine</p>
-                <p>🐣 1985</p>
+                <h4 class="opacity70">Ihor Kosyriev</h4>
+                <p class="opacity70">👨‍💻 Software Product Designer</p>
+                <p class="opacity70">🇺🇦 Kyiv, Ukraine</p>
+                <p class="opacity70">🐣 1985</p>
 			</header>
 
             <div id="featured"></div>
@@ -77,67 +77,89 @@
                         </div>
                     </div>
 
-                    <a href="#featured" class="button">Move to top</a>
-
                     <div id="2022-09"></div>
 
                     <div class="project">
                         <h2>Decreased churn rate with a new tracking mode</h2>
 
-                        <div class="info">
+                        <div class="container-project">
 
-                            <div class="highlight">
-                                <h5>Product</h5>
-                                <p>TrackiPet (Android, iOS), is:</p>
+                            <div class="callout callout-blue">
+                                <h5>🛒 Product/platforms</h5>
+                                <p>TrackiPet:</p>
+                                    <ul>
+                                        <li>is a beta version</li>
+                                        <li>of an internal white-label product</li>
+                                        <li>for <a href="https://apps.apple.com/es/app/trackipet/id1621740474">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.trackimo.app2.trackiplus&gl=US&pli=1">Android</a> platforms</li>
+                                        <li>for pet owners segment</li>
+                                    </ul>
                             </div>
 
-                            <div class="highlight">
-                                <h5>My role</h5>
+                            <div class="callout callout-blue">
+                                <h5>👨‍💻 My role</h5>
                                 <p>An in-house senior product designer in collaboration with a product manager, customer support specialists, Android developers, iOS developers and QA engineers</p>
                             </div>
 
-                            <div class="highlight">
-                                <h5>Project duration</h5>
-                                <p>September 2022 – December 2023</p>
+                            <div class="callout callout-blue">
+                                <h5>⏰ Project duration</h5>
+                                <p>September 2022 – December 2022</p>
                             </div>
 
-                            <div class="highlight">
-                                <h5>Business goal</h5>
+                            <div class="callout callout-blue">
+                                <h5>🗂 Project type</h5>
+                                <p>New functionality</p>
+                            </div>
+
+                            <div class="callout callout-yellow">
+                                <h5>⛳️ Business goal</h5>
                                 <p>Decrease churn rate of new users</p>
                             </div>
-                            
+
                             <div class="process">
                                 <h5>Design process</h5>
                                 
                                 <div class="step">
-                                    <h4>Prepared task in Jira, added a project in Figma by a template</h4>
+                                    <h4>Prepared task in Jira by a template. Added a project in Figma by a template. Linked everything together</h4>
                                     <img srcset="2022-09/2022-09-01.png 3x">
+                                    <p class="caption">I use templates developed and refined by myself</p>
                                 </div>
 
                                 <div class="step">
-                                    <h4>Made a discovery and documented a problem statement</h4>
+                                    <h4>Had a discussion with a product manager and documented a context</h4>
                                     <ul>
-                                        <li>There’s an option in apps to track in minutes (1 minute, 5 minutes, 10 minutes, 15 minutes, 30 minutes, 45 minutes, 60 minutes, 120 minutes, 240 minutes)</li>
-                                        <li>Time plays a significant role in finding a pet as a moving object, and even 1 minute delay is too much for this task. This was validated by several internal and external user interviews by product managers</li>
+                                        <li>At the time, there was an option in apps to track only in minutes (1 minute, 5 minutes, 10 minutes, 15 minutes, 30 minutes, 45 minutes, 60 minutes, 120 minutes, 240 minutes). It was enough for use cases in Trackimo+ apps</li>
+                                        <li>According to several internal and external user interviews made by product managers, in such specific task (track pets), time plays a significant role in finding a pet as a moving object. And even 1 minute delay is too much for this task</li>
+                                        <li>To decrease churn, presumably, we need to provide users with an essential functionality: tracking in seconds</li>
+                                        <li>New tracking mode could be also used as a core to define new subscription plans and business model update</li>
                                     </ul>
+                                    <div class="callout callout-inline callout-yellow">
+                                        <h5>😥 User needs formulated as a user story</h5>
+                                        <p>As a user, I want to see precise and up-to-date information regarding my pet location, so that I’ll be sure that my pet is in a safe zone</p>
+                                    </div>
                                 </div>
 
                                 <div class="step">
-                                    <h4>Also documented an additional context</h4>
+                                    <h4>Had a discussion with development team leads and documented an additional context</h4>
                                     <ul>
-                                        <li>“Live tracking” mode requires exceptional indication as it should be limited by 15 minutes because of hardware limitations (battery drainage) and software limitation (high server load and package traffic limit)</li>
-                                        <li>“Live tracking” mode will be used as a core to define new subscription plans</li>
+                                        <li>New mode requires exceptional indication as it should be limited by 15 minutes because of hardware limitations (battery drainage) and software limitation (high server load and package traffic limit)</li>
                                     </ul>
+                                    <div class="callout callout-inline callout-yellow">
+                                        <h5>🔩 Technical limitations</h5>
+                                        <ul>
+                                            <li>15 minutes per session</li>
+                                            <li>5 activations per day</li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="step">
                                     <h4>Defined a design solution</h4>
                                     <p>Provide users with:</p>
                                     <ul>
-                                        <li>An option to activate "Live tracking" tracking mode</li>
+                                        <li>An option to activate "Live" tracking mode</li>
                                         <li>An indication of time left for an activation</li>
-                                        <li>An indication of number of feature activations left for the current day (because of the limitation)</li>
-                                        <li>An information on when number of feature activations resets (because of the limitation)</li>
+                                        <li>An indication of number of feature activations left for the current day</li>
+                                        <li>An information on when number of feature activations resets</li>
                                     </ul>
                                 </div>
 
@@ -174,7 +196,12 @@
                                 </div>
                                 
                                 <div class="step">
-                                    <h4>Refined the concept according to internal (product manager, developers) and external (loyal users) usability testings, feedback loops and discussions</h4>
+                                    <h4>Conducted
+                                        <ul>
+                                            <li>Refined the concept according to internal (product manager, developers) and external (loyal users) usability testings, feedback loops and discussions
+                                            </li>
+                                        </ul>
+                                    </h4>
                                     <img srcset="2022-09/2022-09-07.png 2x">
                                 </div>
                                 
@@ -228,7 +255,7 @@
 
                             </div>
 
-                            <div class="highlight">
+                            <div class="callout callout-blue">
                                 <h5>Results</h5>
                                 <ul>
                                     <li>Most of monthly active users from beta testing group tried “Live tracking” functionality</li>
@@ -237,7 +264,7 @@
                                 </ul>
                             </div>
 
-                            <div class="highlight">
+                            <div class="callout callout-blue">
                                 <h5>Next steps</h5>
                                 <ul>
                                     <li>Track feature usage events to get more insights</li>
@@ -247,23 +274,24 @@
                         </div>
                     </div>
 
-                    <a href="#header" class="button">Move to top</a>
+                    <a href="#featured" class="button">Move to the list of projects</a>
+
                     <div id="2020-06"></div>
 
                     <div class="project">
                         <h2>Improved speed and quality of knowledge transfer from experts to engineers</h2>
 
                         <div class="info">
-                            <div class="highlight">
+                            <div class="callout">
                                 <h5>Product</h5>
                                 <p>NDA</p>
                             </div>
-                            <div class="highlight">
+                            <div class="callout">
                                 <h5>My role</h5>
                                 <p>TBD</p>
                             </div>
 
-                            <div class="highlight">
+                            <div class="callout">
                                 <h5>Results</h5>
                                 <ul>
                                     <li>Most of monthly active users from beta testing group tried “Live tracking” functionality</li>
@@ -272,7 +300,7 @@
                                 </ul>
                             </div>
 
-                            <div class="highlight">
+                            <div class="callout">
                                 <h5>Next steps</h5>
                                 <ul>
                                     <li>Track feature usage events to get more insights</li>
