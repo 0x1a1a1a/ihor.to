@@ -66,7 +66,7 @@ main { }
         .container-main {
             margin:     0 auto;
             padding:    0 1.5em;
-            max-width:  640pt;
+            max-width:  600pt;
         }
 
 
@@ -141,17 +141,26 @@ main { }
             margin-top: 3em;
         }
 
+                .container-project {
+                    display:           flex;
+                    flex-wrap:         wrap;
+                    align-items:       stretch;
+                    gap:               1em;
+                    margin-top:        1.5em;
+                }
+
                 .project h2 {
                     color: var(--color-secondary-text);
                 }
 
                 .project h3 {
                     color:          var(--color-secondary);
-                    margin-bottom:  .5em;
+                    margin-bottom:  0.5em;
                 }
 
                 .project h4 {
                     color:   var(--color-secondary-text);
+                    margin-bottom:  0.5em;
                 }
 
                 .project h5 {
@@ -159,14 +168,28 @@ main { }
                     margin-bottom:  0.5em;
                 }
 
+                .project p {
+                    margin-bottom:  0.5em;
+                    line-height: 1.5;
+                }
+
+                .project a {
+                    font-weight: var(--medium);
+                }
+
+                .project b {
+                    font-weight: var(--semibold);
+                }
+
                 .project img {
-                    display: block;
-                    max-width: 100%;
-                    margin: 1em auto;
+                    display:    block;
+                    max-width:  100%;
+                    margin:     1em auto 1em;
                 }
 
                 .project ul {
-                    padding-left:  2em;
+                    margin-top:      0.5em;
+                    padding-left:    2em;
                     list-style-type: disc;
                     /* list-style-image: url('sqpurple.gif'); */
                 }
@@ -177,80 +200,67 @@ main { }
 
                 .project .caption {
                     display: block;
-                    margin-top: 0.5em;
+                    margin-top: -1em;
                     font-size: 0.825em;
                     color: var(--color-secondary);
                 }
 
-                .container-project {
-                    display:           flex;
-                    flex-wrap:         wrap;
-                    align-items:       stretch;
-                    gap:               1em;
-                    margin-top:        1.5em;
+                .project .callout {
+
+                    flex-grow:         1;
+                    flex-shrink:       1;
+                    flex-basis:        45%;
+
+                    padding:           1em 1.25em;
+
+                    color:             var(--color-secondary-text);
+
+                    border-style:      solid;
+                    border-width:      1pt;
+                    border-radius:     0.5em;
                 }
 
-                        .project .callout {
+                .project .callout-green {
+                    background-color:  var(--color-tertiary-green-bg);
+                    border-color:      var(--color-tertiary-green-stroke);        
+                }
 
-                            flex-grow:         1;
-                            flex-shrink:       1;
-                            flex-basis:        45%;
-                            max-width:         25em;
+                .project .callout-yellow {
+                    background-color:  var(--color-tertiary-yellow-bg);
+                    border-color:      var(--color-tertiary-yellow-stroke);
+                }
 
-                            padding:           1em 1.25em;
+                .project .callout-blue {
+                    background-color:  var(--color-tertiary-blue-bg);
+                    border-color:      var(--color-tertiary-blue-stroke);   
+                }
 
-                            color:             var(--color-secondary-text);
+                .project .process {
 
-                            border-style:      solid;
-                            border-width:      1.5pt;
-                            border-radius:     0.5em;
-                        }
+                    flex-grow:        1;
+                    flex-shrink:      0;
+                    flex-basis:       100%;
 
-                        .callout-green {
-                            background-color:  var(--color-tertiary-green-bg);
-                            border-color:      var(--color-tertiary-green-stroke);        
-                        }
+                    margin-top:       1em;
+                    border-radius:    1em;
+                    padding:          1em 0;
+                    background-color: var(--color-secondary-background);
 
-                        .callout-yellow {
-                            background-color:  var(--color-tertiary-yellow-bg);
-                            border-color:      var(--color-tertiary-yellow-stroke);
-                        }
+                    color:            var(--color-secondary-text);
 
-                        .callout-blue {
-                            background-color:  var(--color-tertiary-blue-bg);
-                            border-color:      var(--color-tertiary-blue-stroke);   
-                        }
+                    border-style:     none;
+                    border-width:     1.25pt;
+                    border-color:     var(--color-secondary-lightest);
+                    border-radius:    1em;
+                }
 
-                        .callout-inline {
-                            margin-top: 1em;
-                        }
+                .project .step {
+                    margin-top: 0.5em;
+                }
 
-                        .project .process {
-
-                            flex-grow:        1;
-                            flex-shrink:      0;
-                            flex-basis:       100%;
-
-                            margin-top:       1em;
-                            border-radius:    1em;
-                            padding:          1em 0;
-                            background-color: var(--color-secondary-background);
-
-                            color:            var(--color-secondary-text);
-
-                            border-style:     none;
-                            border-width:     1.25pt;
-                            border-color:     var(--color-secondary-lightest);
-                            border-radius:    1em;
-                        }
-
-                        .project .step {
-                            margin-top: 1.5em;
-                        }
-
-                        .project .step + .step {
-                            margin-top: 3em;
-                        }
+                .project .step + .step {
+                    margin-top: 3em;
+                }
 
 
 

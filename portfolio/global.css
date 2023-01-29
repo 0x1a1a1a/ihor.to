@@ -25,11 +25,11 @@
     --color-secondary-darkness:  hsla(220, 20%, 15%, 1);
 
     --color-tertiary-yellow-bg:     hsla(45, 80%, 97%, 1);
-    --color-tertiary-yellow-stroke: hsla(45, 70%, 70%, 1);
+    --color-tertiary-yellow-stroke: hsla(45, 70%, 80%, 1);
     --color-tertiary-blue-bg:       hsla(200, 80%, 97%, 1);
-    --color-tertiary-blue-stroke:   hsla(200, 70%, 70%, 1);
-    --color-tertiary-green-bg:      hsla(90, 70%, 97%, 1);
-    --color-tertiary-green-stroke:  hsla(100, 70%, 70%, 1);
+    --color-tertiary-blue-stroke:   hsla(200, 70%, 80%, 1);
+    --color-tertiary-green-bg:      hsla(110, 70%, 97%, 1);
+    --color-tertiary-green-stroke:  hsla(110, 70%, 80%, 1);
 
 
     
