@@ -28,15 +28,15 @@ header {
         }
 
         .tag {
-        	font-size:        0.75rem;
+        	font-size:        0.5rem;
             letter-spacing:   0.5pt;
-        	font-weight:      var(--medium);
+        	font-weight:      var(--regular);
         	color:            var(--color-lightness);
         	border-width:     1pt;
         	border-style:     solid;
         	border-color:     var(--color-lightness);
         	border-radius:    4pt;
-        	padding:          2pt 4pt;
+        	padding:          2pt 3pt 2pt 4pt;
         }
 
         header h4 {
@@ -65,19 +65,21 @@ main { }
 
         .container-main {
             margin:     0 auto;
-            padding:    0 1.5em;
+            padding:    3em 1.5em;
             max-width:  600pt;
+            overflow: auto;
         }
 
 
 
         .featured {
-            margin-top: 3em;
+            padding: 3em 0;
         }
 
                 .container-featured {
                     display:           flex;
-                    flex-wrap:         wrap;
+                    flex-direction:    column;
+                    flex-wrap:         nowrap;
                     align-items:       stretch;
                     gap:               1em;
                 }
@@ -96,7 +98,7 @@ main { }
                 }   
 
                 .featured .section {
-                    margin:  3em 0 1em;
+                    margin: 3em 0 1em;
                 }
 
                 .featured h2 {
@@ -123,7 +125,7 @@ main { }
         .button {
             display:          inline-block;
             width:            100%;
-            margin:           2em 0;
+            margin:           3em 0;
             padding:          1em 0.75em;
             box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
 
@@ -138,19 +140,19 @@ main { }
 
 
         .project {
-            margin-top: 3em;
+            padding: 3em 0;
         }
 
                 .container-project {
-                    display:           flex;
-                    flex-wrap:         wrap;
-                    align-items:       stretch;
-                    gap:               1em;
-                    margin-top:        1.5em;
+                    display:      flex;
+                    flex-wrap:    wrap;
+                    align-items:  stretch;
+                    gap:          1em;
                 }
 
                 .project h2 {
-                    color: var(--color-secondary-text);
+                    color:          var(--color-secondary-text);
+                    margin-bottom:  0.5em;
                 }
 
                 .project h3 {
@@ -159,7 +161,7 @@ main { }
                 }
 
                 .project h4 {
-                    color:   var(--color-secondary-text);
+                    color:          var(--color-secondary-text);
                     margin-bottom:  0.5em;
                 }
 
@@ -170,7 +172,7 @@ main { }
 
                 .project p {
                     margin-bottom:  0.5em;
-                    line-height: 1.5;
+                    line-height:    1.5;
                 }
 
                 .project a {
@@ -181,32 +183,43 @@ main { }
                     font-weight: var(--semibold);
                 }
 
+                .project .image-block {
+                    background-color:  var(--color-lightness-50);
+                    margin:            1em auto 1em;
+                    padding:           2em;
+                    border-radius:     1em;
+                }
+
                 .project img {
                     display:    block;
                     max-width:  100%;
-                    margin:     1em auto 1em;
+                    margin:     0 auto;
                 }
 
                 .project ul {
-                    margin-top:      0.5em;
-                    padding-left:    2em;
-                    list-style-type: disc;
+                    margin-top:       0.5em;
+                    padding-left:     2em;
+                    list-style-type:  disc;
                     /* list-style-image: url('sqpurple.gif'); */
                 }
 
                 .project li {
-                    margin-top: 0.25em;
+                    margin-bottom:  0.25em;
+                    line-height:    1.5;
                 }
 
                 .project .caption {
-                    display: block;
-                    margin-top: -1em;
-                    font-size: 0.825em;
-                    color: var(--color-secondary);
+                    display:     block;
+                    margin:      2em 0 0;
+                    font-size:   0.825em;
+                    color:       var(--color-secondary);
+                }
+
+                .project .image-block .caption {
+                    text-align:  center;
                 }
 
                 .project .callout {
-
                     flex-grow:         1;
                     flex-shrink:       1;
                     flex-basis:        45%;
@@ -271,7 +284,6 @@ main { }
 
 
 footer {
-        margin-top:        3em;
         background-color:  var(--color-secondary-text);
         padding:           1em;
 }
@@ -293,9 +305,9 @@ footer {
                     font-weight:      var(--regular);
                     font-size:        1rem;
                     text-decoration:  none;
-                    border-style:     solid;
+                    /* border-style:     solid;
                     border-color:     transparent;
-                    border-width:     2pt;
+                    border-width:     1pt; */
                     border-radius:    2em;
                 }
 
@@ -305,9 +317,10 @@ footer {
 
                 .contacts a:hover {
                     text-decoration:  none;
-                    border-style:     solid;
+                    background-color: var(--color-secondary-darkest);
+                    /* border-style:     solid;
                     border-color:     var(--color-secondary-background);
-                    border-width:     2pt;
+                    border-width:     1pt; */
                     border-radius:    2em;
                 }
 

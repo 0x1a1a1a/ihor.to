@@ -21,11 +21,9 @@
                 <p class="opacity70">🐣 1985</p>
 			</header>
 
-            <div id="featured"></div>
-
             <main>
                 <div class="container-main">
-                    <div class="featured">
+                    <div class="featured" id="featured">
                         <h2>Featured projects</h2>
                         <div class="container-featured">
                             <div class="item">
@@ -86,16 +84,16 @@
 
                             <div class="callout callout-blue">
                                 <h5>🛒 Product/platforms</h5>
-                                <p><b>TrackiPet</b> is <a href="https://trackimo.com/">Trackimo company</a> white-label B2C product</p>
+                                <p><b>TrackiPet</b> is <a href="https://trackimo.com/">Trackimo company</a> white-label product</p>
                                 <p><b>Domain</b>: IoT</p>
                                 <p><b>Platforms</b>: <a href="https://apps.apple.com/es/app/trackipet/id1621740474">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.trackimo.app2.trackiplus&gl=US&pli=1">Android</a></p>
-                                <p><b>Market</b>: Europe (Amazon Europe)
+                                <p><b>Market</b>: Europe (Amazon Europe), B2C
                                 <p><b>Users</b>: Pet owners
                             </div>
 
                             <div class="callout callout-blue">
                                 <h5>👨‍💻 My role</h5>
-                                <p>An in-house senior product designer in collaboration with a product manager, customer support specialists, Android developers, iOS developers and QA engineers</p>
+                                <p>An in-house senior product designer in a collaboration with a product manager, customer support specialists, Android developers, iOS developers and QA engineers (functional teams)</p>
                             </div>
 
                             <div class="callout callout-blue">
@@ -118,8 +116,10 @@
                                 
                                 <div class="step">
                                     <h4>Prepared task in Jira by a template. Added a project in Figma by a template. Linked everything together</h4>
-                                    <img srcset="2022-09/2022-09-01.png 3x" alt="Image">
-                                    <p class="caption">A template, which reflects my work processes</p>
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-01.png 3x" alt="Image">
+                                        <p class="caption">A template, which reflects my work processes</p>
+                                    </div>
                                 </div>
 
                                 <div class="step">
@@ -165,12 +165,22 @@
 
                                 <div class="step">
                                     <h4>Analyzed how switching of tracking modes works now in iOS and Android apps</h4>
-                                    <img srcset="2022-09/2022-09-02.png 2x" alt="Image">
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-02.png 2x" alt="Image">
+                                        <p class="caption">A user flow, which reflects existing app functionality</p>
+                                    </div>
                                 </div>
 
                                 <div class="step">
                                     <h4>Started with an early concept: Decided where the switcher and indicator of Live tracking mode should be located</h4>
-                                    <img srcset="2022-09/2022-09-03.png 3x" alt="Image">
+                                    <div class="step callout callout-green">
+                                        <h5>🛠 Design process specifics</h5>
+                                        <p>The product already had a working design library, that’s why wireframes step was omitted</p>
+                                    </div>
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-03.png 3x" alt="Image">
+                                        <p class="caption">A screen displays position of the new element</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="step callout callout-green">
@@ -184,68 +194,77 @@
 
                                 <div class="step">
                                     <h4>Decided what icons should be used</h4>
-                                    <img srcset="2022-09/2022-09-04.png 2x" alt="Image">
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-04.png 2x" alt="Image">
+                                        <p class="caption">Icon options for the element</p>
+                                    </div>
                                 </div>
 
                                 <div class="step">
                                     <h4>Defined states (a behavior) for the switch/indicator</h4>
-                                    <img srcset="2022-09/2022-09-05.png 2x" alt="Image">
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-05.png 2x" alt="Image">
+                                        <p class="caption">Activated functionality (more than 30 seconds left), activated functionality (less than 30 seconds left), default state (1 activation left), default state (none activations left)</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="step">
-                                    <h4>Created a first iteration of user flow. Including several corner cases</h4>
-                                    <ul>
-                                        <li>5, 4, 3, 2, 1 activations left</li>
-                                        <li>None activations left</li>
-                                        <li>Timer starts</li>
-                                        <li>Less than 30 seconds of timer left</li>
-                                        <li>Timer ends</li>
-                                    </ul>
-                                    <img srcset="2022-09/2022-09-06.png 2x" alt="Image">
+                                    <h4>Created a first iteration of user flow</h4>
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-06.png 2x" alt="Image">
+                                        <p class="caption">Including several corner cases</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="step">
-                                    <h4>Asked for feedback on early concept from product manager, developers and QA, considered and implemented through feedback loops</h4>
+                                    <h4>Asked for feedback on early concept from product manager, developers and QA engineers</h4>
                                     <div class="step callout callout-green">
-                                        <h5>⚖️ Tradeoff</h5>
+                                        <h5>⚖️ Tradeoffs</h5>
                                             <p>According to internal feedback, the element is too bulky and takes a lot of screen space. To address this issue, after considering several options, we agreed to make a more compact version and add a tutorial.</p>
                                     </div>
-                                        <ul>
-                                            <li>Applied white-label styles and components</li>
-                                            <li>Defined final name for the functionality ("Live tracking" instead of "Realtime")</li>
-                                            <li>Simplified the element, made it more compact
-                                                <img srcset="2022-09/2022-09-08v2-01.png 2x" alt="Image">
-                                            </li>
-                                            <li>Changed states of the element to combine statuses
-                                                <img srcset="2022-09/2022-09-08v2-02.png 2x" alt="Image">
-                                            </li>
-                                            <li>Added, tested and removed notifications when timer starts, ends or stops</li>
-                                        </ul>
+                                    <ul>
+                                        <li>Applied white-label styles and components</li>
+                                        <li>Defined final name for the functionality ("Live tracking" instead of "Realtime")</li>
+                                        <li>Simplified the element, made it more compact</li>
+                                        <div class="image-block">
+                                            <img srcset="2022-09/2022-09-08v2-01.png 2x" alt="Image">
+                                            <p class="caption">Icon was removed, new name applied, counter was remade</p>
+                                        </div>
+                                        <li>Changed states of the element to combine statuses</li>
+                                        <div class="image-block">
+                                            <img srcset="2022-09/2022-09-08v2-02.png 2x" alt="Image">
+                                            <p class="caption">Default state (5 activations left), default state (2 activations left), none activations left, activated functionality</p>
+                                        </div>
+                                        <li>Added, tested and removed notifications when timer starts, ends or stops</li>
+                                        <li>Added multiple devices behavior</li>
+                                        <div class="image-block">
+                                            <img srcset="2022-09/2022-09-11.png 3x" alt="Image">
+                                            <p class="caption">Tracking mode affects all turned on devices, so badges of them all are changed to "Live tracking". “Update location of all trackers” button now has “Disabled” state during “Live location”</p>
+                                        </div>
+                                    </ul>
                                 </div>
 
                                 <div class="step">
                                     <h4>Asked for feedback on refined concept from active users</h4>
                                     <ul>
-                                        <li>Added subflow when there are no activations per day left
-                                            <img srcset="2022-09/2022-09-09.png 3x">
-                                        </li>
-                                        <li>Added a functionality to stop the timer and a confirmation when users stop the timer
+                                        <li>Added subflow when there are no activations per day left</li>
+                                        <div class="image-block">
+                                            <img srcset="2022-09/2022-09-09.png 3x" alt="Image">
+                                            <p class="caption">A modal window with a detailed explanation why functionality is inactive at the moment</p>
+                                        </div>
+                                        <li>Added a functionality to stop the timer and a confirmation when users stop the timer</li>
+                                        <div class="image-block">
                                             <img srcset="2022-09/2022-09-10.png 3x" alt="Image">
-                                        </li>
-                                </div>
-                                
-                                <div class="step">
-                                    <h4>Received additional feedback from QA engineer and added multiple devices behavior</h4>
-                                    <ul>
-                                        <li>Tracking mode affects all turned on devices, so badges of them all are changed to "Live tracking"</li>
-                                        <li>“Update location of all trackers” button now has “Disabled” state during “Live location”</li>
-                                    </ul>
-                                    <img srcset="2022-09/2022-09-11.png 3x" alt="Image">
+                                            <p class="caption">A modal window with a confirmation to prevent accidental stop of the timer</p>
+                                        </div>
                                 </div>
 
                                 <div class="step">
                                     <h4>Refined user flows to include all changes</h4>
-                                    <img srcset="2022-09/2022-09-07.png 2x" alt="Image">
+                                    <div class="image-block">
+                                        <img srcset="2022-09/2022-09-07.png 2x" alt="Image">
+                                        <p class="caption">Nth iteration of a user flow with corner cases</p>
+                                    </div>
                                 </div>
 
                                 <div class="step">
@@ -254,9 +273,9 @@
                                         <li>Got developers feedback on refinemens</li>
                                         <li>Created ready for development assets</li>
                                         <li>Added acceptance criteria</li>
-                                        <li>Updated design library</li>
                                         <li>Together with a product manager defined events for analytics</li>
                                         <li>Supported developers during the implementation</li>
+                                        <li>Updated design library</li>
                                     </ul>
                                 </div>
 
@@ -267,12 +286,12 @@
                                 <ul>
                                     <li>Most of monthly active users from beta testing group tried “Live tracking” functionality</li>
                                     <li>Most of them were using “Live tracking” functionality at least once per two days (2-month statistics)</li>
-                                    <li>Churn rate decreased by 10%</li>
+                                    <li>Churn rate decreased by 7% for the period of observation</li>
                                 </ul>
                             </div>
 
                             <div class="callout callout-blue">
-                                <h5>📆 Next steps</h5>
+                                <h5>📆 Next steps planned</h5>
                                 <ul>
                                     <li>Track feature usage events to get more insights</li>
                                     <li>Include functionality into subscription flows update (focused on ARPU)</li>
@@ -293,28 +312,126 @@
 
                             <div class="callout callout-blue">
                                 <h5>🛒 Product/platforms</h5>
+                                <p>An internal project of <a href="https://www.gira.com/">Gira company</a></p>
                                 <p><b>Domain</b>: IoT</p>
-                                <p><a href="https://www.gira.com/">Gira</a> is a worldwide electrical wire, light and installation company with headquarters in Germany. It started to digitally transform their business around 10 years ago. While solving wider range of customer problems with smart home technologies, business goals awared of on-site engineers problems and focused on increasing quality of engineers' work, work satisfaction and building community of happy customers, engineers and experts to increase customer lifetime and retention. COVID-19 pandemic forced this transformation, as additional in-person communication were preferably shortened or avoided to stop spreading the virus.</p>
+                                <p><b>Platforms</b>: iOS, web</p>
+                                <p><b>Market</b>: Europe (Germany)</p>
+                                <p><b>Users</b>: Engineers, B2B</p>
+                                <p><b>Domain</b>: IoT</p>
                             </div>
 
                             <div class="callout callout-blue">
                                 <h5>👨‍💻 My role</h5>
-                                <p>An in-house senior product designer in collaboration with a product manager, customer support specialists, Android developers, iOS developers and QA engineers</p>
+                                <p>A contract product designer as a part of one of cross-functional teams focused on improving engineers’ and end users’ satisfaction</p>
                             </div>
 
                             <div class="callout callout-blue">
                                 <h5>⏰ Project duration</h5>
-                                <p>September 2022 – December 2022</p>
+                                <p>June – August 2020</p>
                             </div>
 
                             <div class="callout callout-blue">
                                 <h5>🗂 Project type</h5>
-                                <p>New functionality</p>
+                                <p>New product (as MVP)</p>
                             </div>
 
                             <div class="callout callout-yellow">
                                 <h5>⛳️ Business goal</h5>
-                                <p>Decrease churn rate of new users</p>
+                                <p>Decrease average time engineers spend on-site</p>
+                            </div>
+
+                            <div class="process">
+                                <h5>🛠 Design process</h5>
+
+                                <div class="step">
+                                    <h4>Had a discussion with a stakeholders and documented a context</h4>
+                                    <ul>
+                                        <li>Gira is a worldwide electrical wire, light and installation company with headquarters in Germany. It started to digitally transform their business around 10 years ago</li>
+                                        <li>While solving wider range of customer problems with smart home technologies, business goals awared of on-site engineers problems and focused on increasing quality of engineers' work, their work satisfaction, and building community of happy customers, engineers and experts to increase customer lifetime and retention</li>
+                                        <li>COVID-19 pandemic forced this transformation, as additional in-person communication were preferably shortened or avoided to stop spreading the virus</li>  
+                                </div>
+
+                                <div class="step callout callout-yellow">
+                                    <h5>📊 Metrics: measures of success¹</h5>
+                                    <ul>
+                                        <li>Average time an engineer spends on-site</li>
+                                        <li>Engineer satisfaction of expert service</li>
+                                        <li>End customer satisfaction of engineer service</li>
+                                        <li>End customer lifetime</li>
+                                    </ul>
+                                    <p class="caption">¹ Definitions of success were not set</p>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined groups of people involved</h4>
+                                    <ul>
+                                        <li>Stakeholders: managers of the company</li>
+                                        <li>Experts: the company's customer support specialists, providing service for engineers and end customers</li>
+                                        <li>Engineers: electric engineers and architects in the company, in other service companies or freelance engineers, providing service for end customers</li>
+                                        <li>End customers: house or apartment owners, office managers, store managers</li>
+                                    </ul>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Prepared questions and conducted remote interviews with engineers and experts</h4>
+                                    <div class="image-block">
+                                        <img srcset="2020-06/2020-06-01.png 2x" alt="Image">
+                                        <p class="caption">Totally there were 5 external interviews conducted with engineers and 5 external interviews with experts. 2 internal interviews with stakeholders were conducted earlier</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step">
+                                    <h4>Analyzed interview outcomes and defines problems engineers do have regarding the business goal</h4>
+                                    <ul>
+                                        <li>Using voice only (via phone) is not sufficient for fast support</li>
+                                        <li>Waiting time on hotline is unpredictable for engineers</li>
+                                        <li>Setting up TeamViewer Pilot to communicate with experts takes time and a lot of effort</li>
+                                    </ul>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined hypothesis</h4>
+                                    <ul>
+                                        <li>If we will solve a problem of low quality and low speed of knowledge transfer from experts to engineers</li>
+                                        <li>with a fast, simple, exclusive product for remote video assistance,</li>
+                                        <li>we will increase reduce average time engineer spends on-site¹</li>
+                                        <li>according to problems analysis from conducted interviews</li>
+                                    </ul>
+                                    <p class="caption">¹ Also we believed this release will affect engineer satisfaction of expert service, end customer satisfaction of engineer service and end customer lifetime</p>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined user goals</h4>
+                                    <div class="image-block">
+                                        <img srcset="2020-06/2020-06-02.png 2x" alt="Image">
+                                        <p class="caption">First iteration displaying start and end points, and user goals as checkpoints</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined happy path</h4>
+                                    <div class="image-block">
+                                        <img srcset="2020-06/2020-06-03.png 2x" alt="Image">
+                                        <p class="caption">Second iteration with a happy path: an ideal route for users to get value</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined screen elements and corner cases</h4>
+                                    <div class="image-block">
+                                        <img srcset="2020-06/2020-06-04.png 2x" alt="Image">
+                                        <p class="caption">Third iteration with additional paths including errors, and information architecture including screens and screen elements</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <h4>Defined wireframes</h4>
+                                    <div class="image-block">
+                                        <img srcset="2020-06/2020-06-05.png 2x" alt="Image">
+                                        <p class="caption">Fourth iteration with wireframes</p>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -327,13 +444,13 @@
 
             <footer>
                 <div class="contacts">
-                    <a class="opacity50"><img srcset="assets/icon-24x24-cv.svg" alt="CV icon">CV</a>
-                    <a href="assets/CV_Ihor_Kosyriev_v24.pdf"><img srcset="assets/icon-24x24-cv.svg" alt="CV icon">CV (PDF)</a>
-                    <a href="https://www.linkedin.com/in/ihorkosyriev/"><img srcset="assets/icon-24x24-linkedin.svg" alt="LinkedIn icon">LinkedIn profile</a>
-                    <a class="opacity50"><img srcset="assets/icon-24x24-twitter.svg" alt="Twitter icon">Twitter</a>
-                    <a href="https://www.t.me/proektanta"><img srcset="assets/icon-24x24-telegram.svg" alt="Telegram icon">Proêktanta</a>
-                    <a href="https://www.t.me/ihorkosyriev"><img srcset="assets/icon-24x24-telegram.svg" alt="Telegram icon">Ihor Kosyriev</a>
-                    <a href="mailto:hello@ihor.to"><img srcset="assets/icon-24x24-mail.svg" alt="Mail icon">Email</a>
+                    <!-- <a class="opacity50"><img srcset="assets/icon-24x24-cv.svg" width="16pt" height="16pt" alt="CV icon">CV</a> -->
+                    <a href="assets/CV_Ihor_Kosyriev_v24.pdf"><img srcset="assets/icon-24x24-cv.svg" width="16pt" height="16pt" alt="CV icon">CV<span class="tag">IN PDF</span></a>
+                    <a href="https://www.linkedin.com/in/ihorkosyriev/"><img srcset="assets/icon-24x24-linkedin.svg" width="16pt" height="16pt" alt="LinkedIn icon">LinkedIn profile</a>
+                    <!-- <a class="opacity50"><img srcset="assets/icon-24x24-twitter.svg" width="16pt" height="16pt" alt="Twitter icon">Twitter</a> -->
+                    <!-- <a href="https://www.t.me/proektanta"><img srcset="assets/icon-24x24-telegram.svg" width="16pt" height="16pt" alt="Telegram icon">Proêktanta</a> -->
+                    <a href="https://www.t.me/ihorkosyriev"><img srcset="assets/icon-24x24-telegram.svg" width="16pt" height="16pt" alt="Telegram icon">Ihor Kosyriev</a>
+                    <a href="mailto:hello@ihor.to"><img srcset="assets/icon-24x24-mail.svg" width="16pt" height="16pt" alt="Mail icon">Email</a>
                 </div>
             </footer>
 
