@@ -9,7 +9,7 @@
 
 header {
     height:              100vh;
-    background-image:    url("assets/body-background.png");
+    background-image:    url("../images/hero-portfolio.png");
     background-position: top;
     background-size:     cover;
     background-repeat:   no-repeat;
