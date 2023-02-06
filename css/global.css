@@ -17,12 +17,13 @@
     --color-lightness:           hsla(220, 0%, 100%, 1);
     --color-lightness-50:        hsla(220, 0%, 100%, 0.25);
     --color-secondary-box:       hsla(220, 20%, 100%, 1);
-    --color-secondary-background:hsla(220, 20%, 92%, 1) /* hsla(210, 31%, 90%, 1) #DDE5ED */;
-    --color-secondary-lightest:  hsla(220, 20%, 80%, 1) /* hsla(210, 31%, 90%, 1) #DDE5ED */;
-    --color-secondary-lighter:   hsla(220, 20%, 75%, 1) /* hsla(212, 32%, 76%, 1) #AEC0D5 */;
-    --color-secondary:           hsla(220, 20%, 65%, 1) /* hsla(212, 22%, 64%, 1) #8FA2B7 */;
-    --color-secondary-text:      hsla(220, 20%, 45%, 1) /* hsla(212, 16%, 46%, 1) #637589 */;
-    --color-secondary-darkest:   hsla(220, 20%, 35%, 1) /* hsla(213, 15%, 35%, 1) #4B5766 */;
+    --color-secondary-background:hsla(220, 20%, 92%, 1);
+    --color-secondary-lightest:  hsla(220, 20%, 80%, 1);
+    --color-secondary-lighter:   hsla(220, 20%, 75%, 1);
+    --color-secondary:           hsla(220, 20%, 65%, 1);
+    --color-secondary-text:      hsla(220, 20%, 45%, 1);
+    --color-secondary-darker:    hsla(220, 20%, 35%, 1);
+    --color-secondary-darkest:   hsla(220, 20%, 25%, 1);
     --color-secondary-darkness:  hsla(220, 20%, 15%, 1);
 
     --color-tertiary-yellow-bg:     hsla(45, 80%, 97%, 1);
@@ -31,6 +32,10 @@
     --color-tertiary-blue-stroke:   hsla(200, 70%, 80%, 1);
     --color-tertiary-green-bg:      hsla(110, 70%, 97%, 1);
     --color-tertiary-green-stroke:  hsla(110, 70%, 80%, 1);
+    --color-tertiary-violet-bg:     hsla(250, 70%, 97%, 1);
+    --color-tertiary-violet-stroke: hsla(250, 70%, 80%, 1);
+    --color-tertiary-red-bg:        hsla(0, 80%, 97%, 1);
+    --color-tertiary-red-stroke:    hsla(0, 70%, 80%, 1);
 
 
     
@@ -128,13 +133,13 @@ body * + * {
 
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: var(--light);
     letter-spacing: -0.75pt;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: var(--regular);
     letter-spacing: -0.25pt;
 }
