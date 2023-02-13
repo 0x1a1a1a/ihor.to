@@ -61,16 +61,12 @@ header {
 
 
 
-main { }
-
-        .container-main {
-            margin:     0 auto;
-            padding:    3em 1.5em;
-            max-width:  600pt;
-            overflow:   auto;
-        }
-
-
+main {
+    margin:     0 auto;
+    padding:    3em 1.5em;
+    max-width:  600pt;
+    overflow:   auto;
+}
 
         .featured {
             padding: 3em 0;
