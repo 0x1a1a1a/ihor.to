@@ -210,8 +210,8 @@ main {
                     margin-top:       0.5em;
                     padding-left:     2em;
                     list-style-type:  disc;
-                    /* list-style-image: url('sqpurple.gif'); */
-                }
+                    /* list-style-image: url('../images/icon-24x24-checkmark.svg'); */
+        }
 
                         .project li {
                             line-height: 1.5;

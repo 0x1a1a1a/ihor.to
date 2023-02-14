@@ -1,4 +1,5 @@
-const myList = [
+const myList =
+[
     "I am a designer who thinks",
     "I am a software product designer",
     "I am a digital product designer",
@@ -10,8 +11,10 @@ const myList = [
     "I am about consistency, iterations and love to details",
     "A designer who has all layers named",
     "Problem-first and evidence-based approach",
-    "Me = 🕵️‍♂️+👨‍🔬+👨‍💻"];
+    "Me = 🕵️‍♂️+👨‍🔬+👨‍💻"
+];
 
-function randomizeFunction() {
+function randomizeFunction()
+{
     document.getElementById("randomPhrase").innerHTML = myList[Math.floor(Math.random() * myList.length)]
 }
