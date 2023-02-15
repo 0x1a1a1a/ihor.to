@@ -34,6 +34,7 @@ main {
 
         section h3 {
             color:           var(--color-secondary-medium);
+            padding-bottom:  1em;
         }
 
         section h5 {
@@ -51,26 +52,6 @@ main {
             justify-content:  space-between;
 
             padding-bottom: 1em;
-        }
-
-        section .button {
-            align-self:       flex-start;
-            padding:          0.5em 0.75em;
-            box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
-
-            background-color: var(--color-secondary-medium);
-            border-radius:    0.5em;
-            
-            text-align:       center;
-            color:            var(--color-secondary-box);
-            font-weight:      var(--medium);
-            font-size:        0.75rem;
-        }
-
-        section .button:hover {
-            background-color: var(--color-secondary-darker);
-            color: var(--color-secondary-box);
-            text-decoration-line: none;
         }
 
         section .block {
@@ -109,13 +90,19 @@ main {
 footer {
     background-color:  var(--color-secondary-medium);
     padding:           1em;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
+    position:          sticky;
+    position:          -webkit-sticky;
+    bottom:            0;
+    display:           flex;
+    justify-content:   space-between;
+    flex-direction:    row;
+    flex-wrap:         nowrap;
+    align-items:       center;
+    align-content:     center;
 }
 
     .contacts {
-            margin:           0 auto;
+            margin:           0;
             display:          flex;
             flex-direction:   row;
             flex-wrap:        nowrap;
@@ -131,7 +118,7 @@ footer {
                 align-items:      center;
                 gap:              0.5em;
                 padding:          0.5em 0.75em;
-                color:            var(--color-secondary-background);
+                color:            var(--color-secondary-box);
                 font-weight:      var(--regular);
                 font-size:        1rem;
                 text-decoration:  none;
@@ -155,3 +142,22 @@ footer {
             .contacts a:active {
 
             }
+    
+    .button {
+        padding:          0.5em 0.75em;
+        box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
+
+        background-color: var(--color-secondary-box);
+        border-radius:    0.5em;
+        
+        text-align:       center;
+        color:            var(--color-secondary-medium);
+        font-weight:      var(--medium);
+        font-size:        1rem;
+    }
+
+    .button:hover {
+        background-color: var(--color-secondary-darker);
+        color: var(--color-secondary-box);
+        text-decoration-line: none;
+    }
