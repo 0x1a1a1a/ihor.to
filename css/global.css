@@ -21,10 +21,10 @@
     --color-secondary-lightest:  hsla(220, 20%, 80%, 1);
     --color-secondary-lighter:   hsla(220, 20%, 75%, 1);
     --color-secondary:           hsla(220, 20%, 65%, 1);
-    --color-secondary-text:      hsla(220, 20%, 45%, 1);
+    --color-secondary-medium:      hsla(220, 20%, 45%, 1);
     --color-secondary-darker:    hsla(220, 20%, 35%, 1);
     --color-secondary-darkest:   hsla(220, 20%, 25%, 1);
-    --color-secondary-darkness:  hsla(220, 20%, 15%, 1);
+    --color-secondary-darkness:  hsla(220, 15%, 15%, 1);
 
     --color-tertiary-yellow-bg:     hsla(45, 80%, 97%, 1);
     --color-tertiary-yellow-stroke: hsla(45, 70%, 80%, 1);

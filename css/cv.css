@@ -6,7 +6,6 @@
 
 
 
-
 main {
     margin:     0 auto;
     padding:    3em 1.5em;
@@ -14,13 +13,12 @@ main {
     overflow:   auto;
 }
 
-
     section {
         flex-grow:         1;
         flex-shrink:       0;
         flex-basis:        32%;
         padding:           1.5em 0em;
-        color:             var(--color-secondary-text);
+        color:             var(--color-secondary-medium);
     }
     
         section + section {
@@ -30,12 +28,12 @@ main {
         section h2 {
             font-size:      2rem;
             font-weight:    var(--medium);
-            color:          var(--color-secondary-text);
+            color:          var(--color-secondary-medium);
             margin:         0.25em 0;
         }
 
         section h3 {
-            color:           var(--color-secondary-text);
+            color:           var(--color-secondary-medium);
         }
 
         section h5 {
@@ -60,7 +58,7 @@ main {
             padding:          0.5em 0.75em;
             box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
 
-            background-color: var(--color-secondary-darkest);
+            background-color: var(--color-secondary-medium);
             border-radius:    0.5em;
             
             text-align:       center;
@@ -81,7 +79,7 @@ main {
             gap:               0.5em;
 
             line-height:       1.5;
-            padding:           1em 1.5em;
+            padding:           1em;
             border-style:      solid;
             border-width:      4pt;
             border-radius:     0.5em;
@@ -109,7 +107,7 @@ main {
 
 
 footer {
-    background-color:  var(--color-secondary-darkest);
+    background-color:  var(--color-secondary-medium);
     padding:           1em;
     position: -webkit-sticky;
     position: sticky;

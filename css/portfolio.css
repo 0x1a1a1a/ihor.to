@@ -73,7 +73,7 @@ main {
         }
 
                 .featured h2 {
-                    color:          var(--color-secondary-text);
+                    color:          var(--color-secondary-medium);
                     margin-bottom:  1em;
                 }
 
@@ -161,7 +161,7 @@ main {
                 }
 
                 .project h2 {
-                    color:          var(--color-secondary-text);
+                    color:          var(--color-secondary-medium);
                     margin-bottom:  1em;
                 }
 
@@ -171,7 +171,7 @@ main {
                 }
 
                 .project h4 {
-                    color:          var(--color-secondary-text);
+                    color:          var(--color-secondary-medium);
                     margin-bottom:  0.5em;
                 }
 
@@ -240,7 +240,7 @@ main {
 
                     padding:           1.5em 2em;
 
-                    color:             var(--color-secondary-text);
+                    color:             var(--color-secondary-medium);
 
                     border-radius:     0.5em;
                 }
@@ -299,7 +299,7 @@ main {
                     padding:          1em 0;
                     background-color: var(--color-secondary-background);
 
-                    color:            var(--color-secondary-text);
+                    color:            var(--color-secondary-medium);
 
                     border-style:     none;
                     border-width:     1.25pt;
