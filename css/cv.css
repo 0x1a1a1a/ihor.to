@@ -8,7 +8,7 @@
 
 main {
     margin:     0 auto;
-    padding:    3em 1.5em;
+    padding:    3em 1em;
     max-width:  600pt;
     overflow:   auto;
 }
@@ -37,8 +37,7 @@ main {
             padding-bottom:  1em;
         }
 
-        section h5 {
-            padding: 0.25em;
+        section h4 {
         }
 
         section b {
@@ -57,14 +56,19 @@ main {
         section .block {
             display:           flex;
             flex-direction:    row;
-            gap:               0.5em;
+            gap:               1em;
 
             line-height:       1.5;
-            padding:           1em;
+            padding:           1em 1.5em;
             border-style:      solid;
             border-width:      4pt;
-            border-radius:     0.5em;
+            border-radius:     1em;
             background-color:  var(--color-secondary-box);
+        }
+
+        section .icon {
+            font-size: 0.825rem;
+            padding: 0.15em;
         }
 
         section .block + .block {
@@ -83,13 +87,32 @@ main {
                     margin-top: 0.75em;
                 }
 
+        section .workplace {
+        }
+
+        section .workplace b {
+            font-weight: var(--medium);
+        }
+
+        section .subtype {
+            padding-top: 1.5em;
+        }
+
+        section .subtype p {
+            padding-top: 0.5em;
+        }
+
+        section .subtype p + p {
+            padding-top: 0.25em;
+        }
+
 
 
 
 
 footer {
     background-color:  var(--color-secondary-medium);
-    padding:           1em;
+    padding:           1em 1.5em 1em 1em;
     position:          sticky;
     position:          -webkit-sticky;
     bottom:            0;
