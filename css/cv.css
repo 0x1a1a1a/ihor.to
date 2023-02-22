@@ -1,14 +1,35 @@
 
+h1 {
+    font-weight: var(--regular);
+}
+
+h2 {
+    font-size:      2rem;
+    font-weight:    var(--medium);
+    color:          var(--color-secondary-medium);
+    margin:         0.25em 0;
+}
+
+h3 {
+    color:           var(--color-secondary-medium);
+    padding-bottom:  0.75em;
+}
+
+
+
+b {
+    font-weight:  var(--semibold);
+}
+
 
 
 
 /* Main */
 
 
-
 main {
     margin:     0 auto;
-    padding:    3em 1em;
+    padding:    2em 1em;
     max-width:  600pt;
     overflow:   auto;
 }
@@ -17,33 +38,13 @@ main {
         flex-grow:         1;
         flex-shrink:       0;
         flex-basis:        32%;
-        padding:           1.5em 0em;
+        padding:           2em 0;
         color:             var(--color-secondary-medium);
     }
     
-        section + section {
-            margin-top: 1em;
-        }
-
-        section h2 {
-            font-size:      2rem;
-            font-weight:    var(--medium);
-            color:          var(--color-secondary-medium);
-            margin:         0.25em 0;
-        }
-
-        section h3 {
-            color:           var(--color-secondary-medium);
-            padding-bottom:  1em;
-        }
-
-        section h4 {
-        }
-
-        section b {
-            font-weight:  var(--semibold);
-        }
-
+        /* section + section {
+            margin-top: 3em;
+        } */
 
         section .title {
             display:          flex;
@@ -77,7 +78,6 @@ main {
 
         section ul {
             margin:       0 2.5em;
-            /* list-style-image: url('../images/icon-24x24-checkmark.svg'); */
         }
 
                 section li {
@@ -94,6 +94,10 @@ main {
             font-weight: var(--medium);
         }
 
+        section .subheader {
+            margin-top: -1em;
+        }
+
         section .subtype {
             padding-top: 1.5em;
         }
@@ -104,6 +108,11 @@ main {
 
         section .subtype p + p {
             padding-top: 0.25em;
+        }
+
+        section .small {
+            text-align: center;
+            font-size: 0.75em;
         }
 
 
@@ -136,7 +145,7 @@ footer {
             max-width:        20em;
     }
 
-            .contacts a {
+            .contacts a, .contacts a:visited {
                 display:          flex;
                 align-items:      center;
                 gap:              0.5em;
@@ -145,42 +154,46 @@ footer {
                 font-weight:      var(--regular);
                 font-size:        1rem;
                 text-decoration:  none;
-                /* border-style:     solid;
-            
-                border-color:     transparent;
-                border-width:     1pt; */
                 border-radius:    0.5em;
             }
 
-            .contacts a:visited {
-
-            }
-
-            .contacts a:hover {
+            .contacts a:hover, .contacts a:active {
                 text-decoration:  none;
                 background-color: var(--color-secondary-darker);
                 border-radius:    0.5em;
             }
-
-            .contacts a:active {
-
-            }
     
-    .button {
-        padding:          0.5em 0.75em;
-        box-shadow:       0 2pt 4pt hsla(220, 20%, 45%, 0.2);
-
-        background-color: var(--color-secondary-box);
-        border-radius:    0.5em;
+    .button-menu, .button-menu:visited {
+        padding:           0.5em 0.75em;
+        background-color:  var(--color-secondary-box);
+        color:             var(--color-secondary-medium);
+        border-radius:     0.5em;
         
-        text-align:       center;
-        color:            var(--color-secondary-medium);
-        font-weight:      var(--medium);
-        font-size:        1rem;
+        display:           flex;
+        align-items:       center;
+        gap:               4pt;
+        text-align:        center;
+        font-weight:       var(--medium);
+        font-size:         1rem;
     }
 
-    .button:hover {
-        background-color: var(--color-secondary-darker);
-        color: var(--color-secondary-box);
-        text-decoration-line: none;
+    .button-menu:hover {
+        background-color:  var(--color-secondary-darker);
+        color:             var(--color-secondary-box);
+        text-decoration:   none;
     }
+
+    .button-menu:hover .icon-burger {
+        background-image: url(../images/icon-24x24-burger-hover.svg);
+    }
+
+    .icon-20 {
+        display: inline-block;
+        width: 18pt;
+        height: 18pt;
+        background-size: cover;
+    }
+
+    .icon-burger {
+        background-image: url(../images/icon-24x24-burger-default.svg);
+      }

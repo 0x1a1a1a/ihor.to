@@ -9,11 +9,10 @@
 
 header {
     height:              100vh;
-    background-image:    url("../images/hero-portfolio.png");
+    background-image:    url("../images/hero-portfolio.svg");
     background-position: top;
     background-size:     cover;
-    background-repeat:   no-repeat;
-    padding:             1.5em 15vw;
+    padding:             25vh 15vw;
 }
 
         header h1 {
@@ -95,11 +94,11 @@ main {
                     }
 
                     .container-featured h4 {
-                        color: var(--color-secondary);
+                        color: var(--color-secondary-medium);
                     }
 
                     .container-featured p {
-                        color:        var(--color-secondary);
+                        color:        var(--color-secondary-medium);
                         font-weight:  var(--regular);
                         margin-top:   0.5em;
                     }
