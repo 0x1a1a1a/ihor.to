@@ -320,51 +320,81 @@ main {
 /* Footer section */
 
 
-
-
 footer {
-        background-color:  var(--color-secondary-darkest);
-        padding:           1em;
+    background-color:  var(--color-secondary-medium);
+    padding:           1em 1.5em 1em 1em;
+    position:          sticky;
+    position:          -webkit-sticky;
+    bottom:            0;
+    display:           flex;
+    justify-content:   space-between;
+    flex-direction:    row;
+    flex-wrap:         nowrap;
+    align-items:       center;
+    align-content:     center;
 }
 
-        .contacts {
-                margin:           0 auto;
+    .contacts {
+            margin:           0;
+            display:          flex;
+            flex-direction:   row;
+            flex-wrap:        nowrap;
+            justify-content:  center;
+            align-items:      center;
+            align-content:    center;
+            gap:              1em;
+            max-width:        20em;
+    }
+
+            .contacts a, .contacts a:visited {
                 display:          flex;
-                flex-direction:   column;
-                flex-wrap:        nowrap;
-                justify-content:  center;
                 align-items:      center;
-                align-content:    center;
-                gap:              1em;
-                max-width:        20em;
-        }
+                gap:              0.5em;
+                padding:          0.5em 0.75em;
+                color:            var(--color-secondary-box);
+                font-weight:      var(--regular);
+                font-size:        1rem;
+                text-decoration:  none;
+                border-radius:    0.5em;
+            }
 
-                .contacts a {
-                    display:          flex;
-                    align-items:      center;
-                    gap:              0.5em;
-                    padding:          0.5em 0.75em;
-                    color:            var(--color-secondary-background);
-                    font-weight:      var(--regular);
-                    font-size:        1rem;
-                    text-decoration:  none;
-                    /* border-style:     solid;
-                
-                    border-color:     transparent;
-                    border-width:     1pt; */
-                    border-radius:    0.5em;
-                }
+            .contacts a:hover, .contacts a:active {
+                text-decoration:  none;
+                background-color: var(--color-secondary-darker);
+                border-radius:    0.5em;
+            }
+    
+    .button-menu, .button-menu:visited {
+        padding:           0.5em 0.75em;
+        background-color:  var(--color-secondary-box);
+        color:             var(--color-secondary-medium);
+        border-radius:     0.5em;
+        
+        display:           flex;
+        align-items:       center;
+        gap:               4pt;
+        text-align:        center;
+        font-weight:       var(--medium);
+        font-size:         1rem;
+    }
 
-                .contacts a:visited {
+    .button-menu:hover {
+        background-color:  var(--color-secondary-darker);
+        color:             var(--color-secondary-box);
+        text-decoration:   none;
+    }
 
-                }
+    .button-menu:hover .icon-burger {
+        background-image: url(../images/icon-24x24-burger-hover.svg);
+    }
 
-                .contacts a:hover {
-                    text-decoration:  none;
-                    background-color: var(--color-secondary-darker);
-                    border-radius:    0.5em;
-                }
+    .icon-20 {
+        display: inline-block;
+        width: 18pt;
+        height: 18pt;
+        background-size: cover;
+    }
 
-                .contacts a:active {
-
-                }
+    .icon-burger {
+        background-image: url(../images/icon-24x24-burger-default.svg);
+      }
