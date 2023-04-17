@@ -1,59 +1,45 @@
-
-
-
-/* Font */
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
-
-
-
-
 /* Variables */
-
 :root {
 
-    /* White color and transparency variations */
-    --color-lightness:           hsla(0, 0%, 100%, 1);
-    --color-lightness-transp-1:  hsla(220, 0%, 100%, 0.01);
-    --color-lightness-transp-2:  hsla(220, 0%, 100%, 0.02);
-    --color-lightness-transp-5:  hsla(220, 0%, 100%, 0.05);
-    --color-lightness-transp-10: hsla(220, 0%, 100%, 0.10);
-    --color-lightness-transp-25: hsla(220, 0%, 100%, 0.25);
-    --color-lightness-transp-50: hsla(220, 0%, 100%, 0.50);
-    --color-lightness-transp-75: hsla(220, 0%, 100%, 0.75);
+    /* White + Transparency variations */
+    --color--white--t0:     hsla(230, 0%, 100%, 0);
+    --color--white--t1:     hsla(230, 0%, 100%, 0.01);
+    --color--white--t2:     hsla(230, 0%, 100%, 0.02);
+    --color--white--t5:     hsla(230, 0%, 100%, 0.05);
+    --color--white--t10:    hsla(230, 0%, 100%, 0.1);
+    --color--white--t25:    hsla(230, 0%, 100%, 0.25);
+    --color--white--t50:    hsla(230, 0%, 100%, 0.5);
+    --color--white--t75:    hsla(230, 0%, 100%, 0.75);
+    --color--white--t100:   hsla(230, 0%, 100%, 1);
 
+    /* Black + Transparency variations */
+    --color--black--t25:    hsla(230, 100%, 0%, 0.25);
+    --color--black--t50:    hsla(230, 100%, 0%, 0.50);
+    --color--black--t75:    hsla(230, 100%, 0%, 0.75);
+    
+    /* Primary blue: Transparency variations */
+    --color--primary--t25:  hsla(230, 90%, 60%, 0.25);
+    --color--primary--t75:  hsla(230, 90%, 60%, 0.75);
+    --color--primary--t100: hsla(230, 90%, 60%, 1);
 
+    /* Tertiary blue: Shades */
+    --color--primary--t100--l95: hsla(230, 15%, 95%, 1);
+    --color--primary--t100--l90: hsla(230, 15%, 90%, 1);
+    --color--primary--t100--l75: hsla(230, 15%, 75%, 1);
+    --color--primary--t100--l60: hsla(230, 15%, 60%, 1);
+    --color--primary--t100--l15: hsla(230, 40%, 15%, 1);
+    --color--primary--t100--l15: hsla(230, 40%, 15%, 1);
+    --color--primary--t50--l15:  hsla(230, 40%, 15%, 0.5);
+    --color--primary--t100--l8:  hsla(230, 40%, 8%, 1);
+    --color--primary--t100--l5:  hsla(230, 40%, 5%, 1);
+    --color--primary--t50--l5:   hsla(230, 40%, 5%, 0.5);
 
-    --color-darkness:            hsla(0, 100%, 0%, 1);
-    --color-darkness-transp-25:  hsla(0, 100%, 0%, 0.25);
-    --color-darkness-transp-50:  hsla(0, 100%, 0%, 0.50);
-    --color-darkness-transp-75:  hsla(0, 100%, 0%, 0.75);
+    /* Secondary violet + Transparency variations */
+    --color--secondary--t25:   hsla(270, 90%, 60%, 0.25);
+    --color--secondary--t75:   hsla(270, 90%, 60%, 0.75);
+    --color--secondary--t100:  hsla(270, 90%, 60%, 1);
 
-    --transparent: rgba(255, 255, 255, 0);
-
-    --color-primary-blue-t25:   hsla(230, 90%, 60%, 0.25);
-    --color-primary-violet-t25: hsla(270, 90%, 60%, 0.25);
-    --color-primary-blue-t75:   hsla(230, 90%, 60%, 0.75);
-    --color-primary-violet-t75: hsla(270, 90%, 60%, 0.75);
-
-    --color-primary-blue-darker:    hsla(270, 40%, 15%, 1);
-    --color-primary-blue-darkest:   hsla(270, 40%, 5%, 1);
-
-
-    --color-primary-lightest:  hsla(230, 20%, 95%, 1);
-    --color-primary-lighter-2: hsla(230, 20%, 90%, 1);
-    --color-primary-lighter-1: hsla(230, 20%, 60%, 1);
-    --color-secondary-text:      hsla(230, 15%, 75%, 1);
-    --color-secondary-darker-1-t50:  hsla(230, 40%, 15%, 0.5);
-    --color-secondary-darker-1:  hsla(230, 40%, 15%, 1);
-    --color-secondary-darker-2:  hsla(230, 40%, 8%, 1);
-    --color-secondary-darkest:   hsla(230, 40%, 5%, 1);
-    --color-secondary-darkest-t50:   hsla(230, 40%, 5%, 0.5);
-
-
+    /* Tertiary colors */
     --color-tertiary-yellow-bg:     hsla(45, 80%, 97%, 1);
     --color-tertiary-yellow-stroke: hsla(45, 70%, 80%, 1);
     --color-tertiary-blue-bg:       hsla(200, 80%, 97%, 1);
@@ -65,12 +51,11 @@
     --color-tertiary-red-bg:        hsla(0, 80%, 97%, 1);
     --color-tertiary-red-stroke:    hsla(0, 70%, 80%, 1);
 
-
-    
-    
+    /* Fonts */
     /* --font-custom:              "IBM Plex Sans"; */
     --font-system:              system-ui, "SF Pro", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+    /* Font weights */
     --thin:                     100;
     --extralight:               200;
     --light:                    300;
@@ -83,11 +68,13 @@
 
 
 
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+
 /* Media queries */
-
-
-
-
 :root {
     font-size: 1rem;
 }
@@ -108,10 +95,6 @@
 
 
 /* Hacks */
-
-
-
-
 :root {
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -120,7 +103,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 *,
 ::before,
@@ -164,14 +146,11 @@ body * + * {
 
 
 
-/* Text sizes */
-
-
-
-
+/* Text styles */
 h1 {
     color: var(--color-primary-lightest);
     font-size: 3.5rem;
+    line-height: calc(3.5rem * 1.15);
     font-weight: var(--medium);
     letter-spacing: -0.75pt;
 }
@@ -219,10 +198,6 @@ ul {
 
 
 /* Text styles: Links */
-
-
-
-
 a {
     color: var(--color-secondary-text);
     text-decoration-line: none;
@@ -265,10 +240,6 @@ p > a:hover, li > a:hover {
 
 
 /* Helpers: Opacity */
-
-
-
-
 .opacity10 {
     opacity: 10%;
 }
